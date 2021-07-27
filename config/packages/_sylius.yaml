@@ -7,18 +7,11 @@ imports:
 
     - { resource: "@SyliusShopBundle/Resources/config/app/config.yml" }
     - { resource: "@SyliusPayPalPlugin/Resources/config/config.yaml" }
+    
+    - { resource: '../../src/Resources/config/config.yaml'}
 
 parameters:
     sylius_core.public_dir: '%kernel.project_dir%/public'
-
-sylius_product:
-    resources:
-        product:
-            classes:
-                model: App\Entity\Product\Product
-            translation:
-                classes:
-                    model: App\Entity\Product\ProductTranslation
 
 sylius_shop:
     product_grid:
