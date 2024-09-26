@@ -1,0 +1,8 @@
+sylius_product:
+    resources:
+        product:
+            classes:
+                model: App\Entity\Product\Product
+            translation:
+                classes:
+                    model: App\Entity\Product\ProductTranslation
